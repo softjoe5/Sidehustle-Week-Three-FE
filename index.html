@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="website.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    
+    <div class="container"> 
+        
+        <!-- Image -->
+        <div class="image">
+            <img class="image-size" src="Smile.png" alt="">
+        </div>
+
+        <!-- Content -->
+
+        <div class="content">
+            
+
+            <h1>Join us today👋</h1>
+            <p class="content-par">Clarity gives you the blocksand components you  <br>
+                need to create clarity a truly professional website</p>
+
+                <br>
+            
+            <form action="/" onsubmit="event.preventDefault()"> 
+                
+                <div id="error"></div>
+
+                <p class="form-par">First & Last Name<p>
+                <input id="username"
+                    type= "text"
+                    name= "username"
+                    placeholder="i.e Dacole Joe" required />
+
+                    <p class="form-par">Email</p>
+                    <input id="emai"
+                    type= "email"
+                    name= "email"
+                    placeholder="dacole@mail.com" required />
+
+                    <p class="form-par">Password</p>
+                    <input id="password"
+                    type= "password"
+                    name= "password"
+                    placeholder="***********" required />
+
+                    <br>
+                    <br>
+                    <br>
+                   
+                   <input type="submit" onclick="alert('Form was submitted sucessfully')" value="Submit">
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <div id="portfolio">
+    
+            <div class="work-list">
+                <div class="work">
+                    <div class="layer">
+                        <h3>Product Package</h3>
+                        <p>Professional in Branding & Designs</p>
+                            <a href="$"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <div class="work">
+                    <div class="layer">
+                        <h3>Product Package</h3>
+                        <p>Professional in Branding & Designs</p>
+                            <a href="$"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <div class="work">
+                    <div class="layer">
+                        <h3>Product Package</h3>
+                        <p>Professional in Branding & Designs</p>
+                            <a href="$"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+         
+    </div>
+
+    
+</div>
+    
+<div class="copyright">
+    <p>Copyright Joseph. Made with <i class="fa-solid fa-heart"></i> by Softjoe</p>
+</div>
+
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+<!-- onclick="alert('Form was submitted sucessfully')" -->
